@@ -1133,7 +1133,7 @@ $(document).ready(function() {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: true };
 			});
 		}).catch(function() {
-			return download(Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/rl65f2itwx99h9llrrzl0/MyProject4-HTML5-Shipping.wasm?rlkey=fy696bq28okrefb4tdoude2j8&dl=0'), 'arraybuffer').then(function(wasmBytes) {
+			return download(Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/r32ymw3sn5mqn5c9cl1fp/MyProject4-HTML5-Shipping.wasm?rlkey=g95igu2g6v69oc5vihbcb3v7w&dl=0'), 'arraybuffer').then(function(wasmBytes) {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: false };
 			});
 		});
