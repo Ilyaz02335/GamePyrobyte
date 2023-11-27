@@ -1,4 +1,4 @@
-﻿// javascript code used with Epic Games HTML5 projects
+// javascript code used with Epic Games HTML5 projects
 //
 // much of this is for UE4 development purposes.
 //
@@ -1167,11 +1167,9 @@ $(document).ready(function() {
 			});
 */
 // Instead as a fallback, download as ArrayBuffer. (TODO: Figure out the bugs with the above, and switch to using that one instead)
-			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/6wjxa7ieyqqb0kga6foyq/MyProject4-HTML5-Shipping.data?rlkey=lw258mxbez9ksobz7p7x820ui&dl=0
-'), 'arraybuffer').then(function(dataArrayBuffer) {
+			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/6wjxa7ieyqqb0kga6foyq/MyProject4-HTML5-Shipping.data?rlkey=lw258mxbez9ksobz7p7x820ui&dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
 				Module['preloadedPackages'] = {};
-				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/6wjxa7ieyqqb0kga6foyq/MyProject4-HTML5-Shipping.data?rlkey=lw258mxbez9ksobz7p7x820ui&dl=0
-')] = dataArrayBuffer;
+				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/6wjxa7ieyqqb0kga6foyq/MyProject4-HTML5-Shipping.data?rlkey=lw258mxbez9ksobz7p7x820ui&dl=0')] = dataArrayBuffer;
 				return dataJsDownload.then(addScriptToDom);
 			});
 
@@ -1212,4 +1210,3 @@ $(document).ready(function() {
 		withIndexedDB(null);
 	});
 });
-
