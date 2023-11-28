@@ -1133,7 +1133,7 @@ $(document).ready(function() {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: true };
 			});
 		}).catch(function() {
-			return download(Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/r32ymw3sn5mqn5c9cl1fp/MyProject4-HTML5-Shipping.wasm?rlkey=g95igu2g6v69oc5vihbcb3v7w&dl=0'), 'arraybuffer').then(function(wasmBytes) {
+			return download(Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/z26nt6qukfdb4i78svag2/MyProject4-HTML5-Shipping.wasm?rlkey=gb4e73wwt4acptjhmuuiczo2u&dl=0'), 'arraybuffer').then(function(wasmBytes) {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: false };
 			});
 		});
@@ -1167,9 +1167,9 @@ $(document).ready(function() {
 			});
 */
 // Instead as a fallback, download as ArrayBuffer. (TODO: Figure out the bugs with the above, and switch to using that one instead)
-			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/jnjd3fj5idlnrcnf1of9c/MyProject4-HTML5-Shipping.data?rlkey=em8zo6blrh4l7n3ya98npc20e&dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
+			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/y9hymkkwmjmi3kzyv5c5m/MyProject4-HTML5-Shipping.data?rlkey=k8ae7egmkpamw80cr16zgptg5&dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
 				Module['preloadedPackages'] = {};
-				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/jnjd3fj5idlnrcnf1of9c/MyProject4-HTML5-Shipping.data?rlkey=em8zo6blrh4l7n3ya98npc20e&dl=0')] = dataArrayBuffer;
+				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/scl/fi/y9hymkkwmjmi3kzyv5c5m/MyProject4-HTML5-Shipping.data?rlkey=k8ae7egmkpamw80cr16zgptg5&dl=0')] = dataArrayBuffer;
 				return dataJsDownload.then(addScriptToDom);
 			});
 
